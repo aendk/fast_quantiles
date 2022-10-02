@@ -1,10 +1,10 @@
 # Fast Quantiles for Data Summaries (Information Management Project WS-21/22)
 
-This repository holds an exact and an approximate quantile computation implementation.
+This repository holds exact and an approximate quantile computation implementations written in C++.
 The code was written by me for the Information Management Project.
 I wrote, profiled and optimized the code as part of this class.
-### Exact quantiles.
-This implementation is a very rudimentary baseline, consisting of a vector which is sorted by several threads if need be.
+### Exact quantiles
+This implementation is a very rudimentary, last-minute baseline, consisting of a vector which is sorted by several threads if need be.
 It uses Threading Building Blocks for easy multithreading.
 ### Approximate Quantiles (DDSketch)
 The approximate quantile solution is a port of the python-version of Datadog's [DDsketch](https://github.com/DataDog/sketches-py), 
