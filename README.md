@@ -20,13 +20,13 @@ I've marked some in the code.
 Some were not worth the effort. Like in the image below, one could merge several DDSketches after they finish ingesting data, with the straggler-sketch being merged last.
 DDSketch merging is however very efficient and not worth to optimize.
 
-![profiling](performance_opportunities.png)
+![profiling](img/performance_opportunities.png)
 
 
 ## Performance Comparison
 The performance comparison between several DDSketches and the naive exact quantiles implementation shows that there are almost no downsides to using as much DDSketches as possible, as the time and space required for merges are very minimal.
-![ingest](ingest_performance.png)
-![sort_merge](sort_merge.png)
+![ingest](img/ingest_performance.png)
+![sort_merge](img/sort_merge.png)
 
 ### Miscellaneous
 Also included are some data generators and readers.
